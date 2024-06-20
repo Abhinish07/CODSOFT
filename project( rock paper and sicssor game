@@ -1,0 +1,48 @@
+import random
+
+while True :
+
+    choices = ['rock', 'paper', 'sicssor']
+
+    computer = random.choice(choices)
+
+    user = None
+    while user not in choices :
+      user = input("Enter your choice :")
+
+    if user==computer :  
+      print("user :" , user)
+      print("computer :" , computer)
+      print("Tie")
+    elif user == "rock" and computer == "sicssor" or \
+    user == "paper" and computer == "rock" or \
+    user == "sicssor" and computer == "paper" :
+        print("user :" , user)
+        print("computer :" , computer)
+        print("you win")
+    else :
+        print("user :" , user)
+        print("computer :" , computer)
+        print("you lose")
+
+    play_again = input("play again ?(yes/no) :")
+
+
+        
+    if play_again != "yes" :
+        break
+print("bye game over")
+
+
+
+
+
+        
+    
+
+
+
+
+
+
+
