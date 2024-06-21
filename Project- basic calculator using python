@@ -39,7 +39,7 @@ while True :
 
     again_calculation = input("do you want to do another calculation (yes/no) :")
     if again_calculation != 'yes':
-      print("ram ram aap ko (thanks for calculating) !")
+      print("ram ram  (thanks for calculating) !")
       break
     
 
