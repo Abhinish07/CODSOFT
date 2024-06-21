@@ -1,0 +1,44 @@
+def add(x,y):
+  return(x+y)
+
+def subtract(x,y):
+  return(x-y)
+
+def multiply(x,y):
+  return(x*y)
+
+def divide(x,y):
+  return(x/y)
+
+def calculator():
+  print("select operation")
+  print("1.add")
+  print("2.subtract")
+  print("3.multiply")
+  print("4.divide") 
+
+while True :
+  choice = input("Enter the choice 1,2,3 or 4 ? :")
+
+  if choice not in ('1', '2' , '3' , '4' ) :
+    print("invalid input")
+  if choice in ('1','2','3','4'):
+    numX = float(input("Enter the number X :"))
+    numY = float(input("Enter the number Y :"))
+ 
+    if choice == '1':
+      print("the sum of the number is :", add(numX,numY))
+    elif choice == '2' :
+      print("the diffrence of the number is :", subtract(numX,numY))
+    elif choice == '3' :
+      print("the multiply of the number is :", multiply(numX,numY))
+    elif choice == '4' :
+      print("the divident of the number is :", divide(numX,numY))
+
+    again_calculation = input("do you want to do another calculation (yes/no) :")
+    if again_calculation != 'yes':
+      print("ram ram aap ko (thanks for calculating) !")
+      break
+    
+
+
